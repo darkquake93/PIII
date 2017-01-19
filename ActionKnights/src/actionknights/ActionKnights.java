@@ -19,11 +19,15 @@ public class ActionKnights {
      */
     public static void main(String[] args) throws QuestException {
         ApplicationContext context
-                = new ClassPathXmlApplicationContext("knightXMLConfig.xml");
+                = new ClassPathXmlApplicationContext("XML/knightXMLConfig.xml");
 
         Knight knight = (Knight) context.getBean("knight");
+        Knight sKnight = (Knight) context.getBean("slayerKnight");
+        
+        
 
         knight.embarkOnQuest();
+        sKnight.embarkOnQuest();
     }
 
 }
