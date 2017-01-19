@@ -23,7 +23,5 @@
             </modules>
         </profile>
     </profiles>
-  <modules>
-    <module>MusicTableViewFxml</module>
-  </modules>
+  <modules></modules>
 </project>

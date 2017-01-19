@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<GridPane alignment="CENTER" hgap="10.0" vgap="10.0"
+<!--<GridPane alignment="CENTER" hgap="10.0" vgap="10.0"
     xmlns:fx="http://javafx.com/fxml"
     fx:controller="ku.piii.musictableviewfxml.FXMLController">
     <padding>
@@ -19,6 +19,39 @@
     <TableView fx:id="tableView" GridPane.columnIndex="0" 
         GridPane.rowIndex="1">
     </TableView>
-    <Button GridPane.rowIndex="2" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
+    <Button GridPane.rowIndex="2" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />-->
 
-</GridPane>
+<VBox id="vbox" prefHeight="400" prefWidth="800"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MenuController">   
+<MenuBar fx:id="menuBar" onKeyPressed="#handleKeyInput">
+      <menus>
+         <Menu text="File">
+            <items>
+               <MenuItem text="New"/>
+               <MenuItem text="Open"/>
+               <MenuItem text="Save"/>
+               <MenuItem text="Save As"/>
+               <SeparatorMenuItem  />
+               <MenuItem text="Exit"/>
+            </items>
+         </Menu>
+         <Menu text="Edit">
+            <items>
+               <MenuItem text="Copy"/>
+               <MenuItem text="Cut"/>
+               <MenuItem text="Paste"/>
+            </items>
+         </Menu>
+         <Menu text="Help">
+            <items>
+               <MenuItem text="Search" disable="true"/>
+               <MenuItem text="Online Manual" visible="false"/>
+               <SeparatorMenuItem />
+               <MenuItem text="About" onAction="#handleAboutAction"/>
+            </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+</VBox>
+<!--</GridPane>-->

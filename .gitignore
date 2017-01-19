@@ -14,3 +14,7 @@ hs_err_pid*
 /JsonToolkit/target/
 /MusicService/target/
 /MP3Toolkit/target/
+/HelloTestFX/target/
+/TableViewSample/target/
+/helloWorldSpring/nbproject/private/
+/helloWorldSpring/build/
