@@ -23,11 +23,13 @@ public class ActionKnights {
 
         Knight knight = (Knight) context.getBean("knight");
         Knight sKnight = (Knight) context.getBean("slayerKnight");
+        Knight rKnight = (Knight) context.getBean("rounderKnight");
         
         
 
         knight.embarkOnQuest();
         sKnight.embarkOnQuest();
+        rKnight.embarkOnQuest();
     }
 
 }
