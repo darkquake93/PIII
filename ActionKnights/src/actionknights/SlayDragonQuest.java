@@ -9,7 +9,6 @@ package actionknights;
  *
  * @author k1336511
  */
-public class SlayDragonQuest {
 
     public class SlayDragonQuest implements Quest {
 
@@ -17,5 +16,3 @@ public class SlayDragonQuest {
             System.out.println("Slaying Dragon!");
         }
     }
-
-}
