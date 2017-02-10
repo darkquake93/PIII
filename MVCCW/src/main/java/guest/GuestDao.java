@@ -23,8 +23,11 @@ public class GuestDao {
     // Retrieves all the guests:
     public List<Guest> getAllGuests() {
         TypedQuery<Guest> query = em.createQuery(
-    //  "SELECT g FROM Guest g ORDER BY g.id", Guest.class);
-        "SELECT g FROM Guest g ORDER BY g.id TOP 5", Guest.class);
+                  "SELECT g FROM Guest g ORDER BY g.id", Guest.class);
+//        query.setMaxResults(5);
+//        List<Guest> blah = query.getResultList();
+//
+//blah.clear();
         return query.getResultList();
     }
 
@@ -32,5 +35,16 @@ public class GuestDao {
         TypedQuery<Long> query = em.createQuery(
                 "SELECT Count(g) FROM Guest g", Long.class);
         return query.getSingleResult();
+    }
+
+    // Retrieves all the guests:
+    public List<Guest> removeAllGuests() {
+        TypedQuery<Guest> query = em.createQuery(
+                "DELETE Count(g) FROM Guest g ", Guest.class);
+        List<Guest> blah = query.getResultList();
+
+blah.clear();
+        return query.getResultList();
+        
     }
 }
