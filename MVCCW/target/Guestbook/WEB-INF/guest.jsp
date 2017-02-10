@@ -21,7 +21,7 @@
                 <tr>
                     <td> <input type="text" name="name" /> </td>
                     <td> <input type="text" name="roomno" /> </td>
-                    <td> <input type="submit" value="Add" /> </td>
+                    <td> <input type="submit" value="Submit" /> </td>
                 </tr>
             </table>
             
@@ -33,7 +33,7 @@
                 <% } %>
         </ol><hr>
         <p>
-        <% out.println(guestDao.getCount()); %>
+        <% out.println("Total number of guests: " + guestDao.getCount()); %>
         </p>
 
     </body>

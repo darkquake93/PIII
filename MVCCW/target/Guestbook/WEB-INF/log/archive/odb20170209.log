@@ -236,3 +236,11 @@ Database 'E:\PIII\MVCCW\target\Guestbook\WEB-INF\db\guests.odb' is opened by 141
 [2017-02-09 17:49:24 #2 store] 
 Database 'E:\PIII\MVCCW\target\Guestbook\WEB-INF\db\guests.odb' is closed by 14180@Mars
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-02-09 17:53:49 #1 store] 
+Database 'E:\PIII\MVCCW\target\Guestbook\WEB-INF\db\guests.odb' is opened by 11540@Mars
+
+[2017-02-09 20:09:05 #2 store] 
+Database 'E:\PIII\MVCCW\target\Guestbook\WEB-INF\db\guests.odb' is closed by 11540@Mars
+
