@@ -17,7 +17,10 @@ public class GuestController {
         // Handle a new guest (if any):
         String name = request.getParameter("name");
         String roomno = request.getParameter("roomno");
-        if (name != null && roomno != null) {
+        if (name.equals(null) || roomno.equals(null)) {
+            System.out.println("Testing");
+        }
+        if (name != null || roomno != null) {
             guestDao.persist(new Guest(name, roomno));
         }
 
